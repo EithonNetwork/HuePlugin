@@ -3,6 +3,8 @@ package se.fredsfursten.hueplugin;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import se.fredsfursten.plugintools.PhilipsHue;
+
 public class HueController {
 
 	private static HueController singleton = null;
@@ -29,8 +31,10 @@ public class HueController {
 	}
 
 	public void on(Player player) {
+		PhilipsHue.on();
 	}
 	public void off(Player player) {
+		PhilipsHue.off();
 	}
 	public void playerJoined(Player player) {
 	}
