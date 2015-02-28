@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>se.fredsfursten</groupId>
   <artifactId>HuePlugin</artifactId>
-  <version>HuePlugin</version>
+  <version>0.1-DEV</version>
   <name>DonationBoardPlugin</name>
   <build>
       <plugins>
@@ -32,16 +32,9 @@
            <scope>provided</scope>
        </dependency>
        <dependency>
-       	<groupId>javax.ws.rs</groupId>
-       	<artifactId>javax.ws.rs-api</artifactId>
-       	<version>2.0.1</version>
-       	<scope>provided</scope>
-       </dependency>
-       <dependency>
        	<groupId>com.sun.jersey</groupId>
        	<artifactId>jersey-client</artifactId>
        	<version>1.8</version>
-       	<scope>provided</scope>
        </dependency>
    </dependencies>
 </project>

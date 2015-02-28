@@ -9,14 +9,14 @@ commands:
     usage: /hue on | off
     permission-message: You don't have <permission>
 permissions:
-  donationboard.*:
+  hue.*:
     description: Gives access to all donationboard commands
     default: op
     donationboard.on: true
     donationboard.off: true
-  donationboard.on:
+  hue.on:
     description: Access to /hue on
     default: op
-  donationboard.off:
+  hue.off:
     description: Access to /hue off
     default: op
