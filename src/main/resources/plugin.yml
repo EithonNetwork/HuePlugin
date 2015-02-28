@@ -1,0 +1,22 @@
+name: HuePlugin
+main: se.fredsfursten.hueplugin.HuePlugin
+version: 0.1-DEV
+author: vanbrayne
+description: A Minecraft plugin for controlling Philips Hue lamps, based on events on a minecraft server
+commands:
+  hue:
+    description: Control the behaviour
+    usage: /hue on | off
+    permission-message: You don't have <permission>
+permissions:
+  donationboard.*:
+    description: Gives access to all donationboard commands
+    default: op
+    donationboard.on: true
+    donationboard.off: true
+  donationboard.on:
+    description: Access to /hue on
+    default: op
+  donationboard.off:
+    description: Access to /hue off
+    default: op
