@@ -3,7 +3,7 @@
   <groupId>se.fredsfursten</groupId>
   <artifactId>HuePlugin</artifactId>
   <version>0.1-DEV</version>
-  <name>DonationBoardPlugin</name>
+  <name>HuePlugin</name>
   <build>
       <plugins>
           <plugin>
@@ -32,9 +32,9 @@
            <scope>provided</scope>
        </dependency>
        <dependency>
-       	<groupId>se.fredsfursten.plugintools</groupId>
-       	<artifactId>PluginTools</artifactId>
-       	<version>0.1-DEV</version>
+       		<groupId>se.fredsfursten.plugintools</groupId>
+       		<artifactId>PluginTools</artifactId>
+       		<version>0.1-DEV</version>
        </dependency>
    </dependencies>
 </project>
