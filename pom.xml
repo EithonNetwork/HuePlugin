@@ -22,8 +22,8 @@
    			<configuration>
         		<artifactSet>
             		<includes>
-                		<include>se.fredsfursten.plugintools:PluginTools</include>
-            		</includes>
+                		<include>m.sun.jersey:jersey-client</include>
+             		</includes>
         		</artifactSet>
     		</configuration>
     		<executions>
@@ -51,10 +51,10 @@
            <type>jar</type>
            <scope>provided</scope>
        </dependency>
-       <dependency>
-       		<groupId>se.fredsfursten.plugintools</groupId>
-       		<artifactId>PluginTools</artifactId>
-       		<version>0.1-DEV</version>
-       </dependency>
+  	<dependency>
+  		<groupId>com.sun.jersey</groupId>
+  		<artifactId>jersey-client</artifactId>
+  		<version>1.8</version>
+  	</dependency>
    </dependencies>
 </project>
