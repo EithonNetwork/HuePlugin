@@ -22,7 +22,8 @@
    			<configuration>
         		<artifactSet>
             		<includes>
-                		<include>m.sun.jersey:jersey-client</include>
+                		<include>com.sun.jersey:jersey-client</include>
+               		<include>com.sun.jersey:jersey-core</include>
              		</includes>
         		</artifactSet>
     		</configuration>
