@@ -3,7 +3,7 @@
   <groupId>se.fredsfursten</groupId>
   <artifactId>HuePlugin</artifactId>
   <version>0.1-DEV</version>
-  <name>DonationBoardPlugin</name>
+  <name>HuePlugin</name>
   <build>
       <plugins>
           <plugin>
@@ -15,6 +15,27 @@
                   <target>1.8</target>
               </configuration>
           </plugin>
+		 <plugin>
+    		<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-shade-plugin</artifactId>
+    		<version>2.2</version>
+   			<configuration>
+        		<artifactSet>
+            		<includes>
+                		<include>com.sun.jersey:jersey-client</include>
+               		<include>com.sun.jersey:jersey-core</include>
+             		</includes>
+        		</artifactSet>
+    		</configuration>
+    		<executions>
+        		<execution>
+            		<phase>package</phase>
+            		<goals>
+                		<goal>shade</goal>
+            		</goals>
+        		</execution>
+    		</executions>
+		</plugin>
       </plugins>
    </build>
    <repositories>
@@ -31,10 +52,10 @@
            <type>jar</type>
            <scope>provided</scope>
        </dependency>
-       <dependency>
-       	<groupId>com.sun.jersey</groupId>
-       	<artifactId>jersey-client</artifactId>
-       	<version>1.8</version>
-       </dependency>
+  	<dependency>
+  		<groupId>com.sun.jersey</groupId>
+  		<artifactId>jersey-client</artifactId>
+  		<version>1.8</version>
+  	</dependency>
    </dependencies>
 </project>
