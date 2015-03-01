@@ -63,6 +63,7 @@ public class HueController {
 	
 	private void blink(double saturation, double hue, double brightness) {
 		PhilipsHueInfo lamp = PhilipsHue.getLamp();
+		if (!lamp.isOn()) return;
 		PhilipsHue.dark();
 		BukkitScheduler scheduler = Bukkit.getServer().getScheduler();
 		scheduler.scheduleSyncDelayedTask(this._plugin, new Runnable() {
@@ -74,11 +75,11 @@ public class HueController {
 			public void run() {
 				PhilipsHue.dark();
 			}
-		}, 60L);
+		}, 50L);
 		scheduler.scheduleSyncDelayedTask(this._plugin, new Runnable() {
 			public void run() {
 				PhilipsHue.changeAll(lamp.getSat(), lamp.getHue(), lamp.getBri());
 			}
-		}, 65L);
+		}, 70L);
 	}
 }
