@@ -6,7 +6,7 @@ description: A Minecraft plugin for controlling Philips Hue lamps, based on even
 commands:
   hue:
     description: Control the behaviour
-    usage: /hue on | off
+    usage: /hue on | off | get | color | bright
     permission-message: You don't have <permission>
 permissions:
   hue.*:
@@ -14,9 +14,21 @@ permissions:
     default: op
     donationboard.on: true
     donationboard.off: true
+    donationboard.get: true
+    donationboard.color: true
+    donationboard.bright: true
   hue.on:
     description: Access to /hue on
     default: op
   hue.off:
     description: Access to /hue off
+    default: op
+  hue.get:
+    description: Access to /hue get
+    default: op
+  hue.color:
+    description: Access to /hue color
+    default: op
+  hue.bright:
+    description: Access to /hue bright
     default: op
