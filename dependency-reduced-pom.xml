@@ -28,10 +28,7 @@
         </executions>
         <configuration>
           <artifactSet>
-            <includes>
-              <include>com.sun.jersey:jersey-client</include>
-              <include>com.sun.jersey:jersey-core</include>
-            </includes>
+            <includes />
           </artifactSet>
         </configuration>
       </plugin>

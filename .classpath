@@ -33,5 +33,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/PluginTools"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

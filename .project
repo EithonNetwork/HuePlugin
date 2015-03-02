@@ -21,4 +21,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>PluginTools</name>
+			<type>2</type>
+			<location>C:/Users/Lars/workspace/PluginTools</location>
+		</link>
+	</linkedResources>
 </projectDescription>

@@ -22,8 +22,11 @@
    			<configuration>
         		<artifactSet>
             		<includes>
+            		<!--
                 		<include>com.sun.jersey:jersey-client</include>
                		<include>com.sun.jersey:jersey-core</include>
+              		<include>se.fredsfursten.plugintools:PluginTools</include>
+              		-->
              		</includes>
         		</artifactSet>
     		</configuration>
